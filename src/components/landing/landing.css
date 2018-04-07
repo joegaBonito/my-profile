@@ -4,11 +4,51 @@
 
 .landing-div-positioning {
     text-align:center;
-    padding: 10px 0px 60px 0px;
+    padding: 2% 2% 25% 2%;
 }
 
 .profile-image{
-    width:300px;
-    height:400px;
+    width:250px;
+    height:300px;
     border-radius:100%;
 }
+
+.self-description {
+    font-size:14px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+    .landing-div-positioning {
+        text-align:center;
+        padding: 2% 2% 17% 2%;
+    }
+  }
+  
+  
+  /* Medium devices (tablets, 768px and up)*/
+  @media screen and (min-width: 768px) {
+    .landing-div-positioning {
+        text-align:center;
+        padding: 2% 2% 15% 2%;
+    }
+  }
+  
+  
+  
+  /* Large devices (desktops, 992px and up)*/
+  @media screen and (min-width: 992px) {
+    .landing-div-positioning {
+        text-align:center;
+        padding: 2% 2% 10% 2%;
+    }
+  }
+  
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+    .landing-div-positioning {
+        text-align:center;
+        padding: 2% 2% 8% 2%;
+    }
+  }

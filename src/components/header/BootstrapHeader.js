@@ -29,7 +29,7 @@ class BootstrapHeader extends Component {
         var cursorPointer = 'cursor-pointer'
         return (
             <div>
-                <Navbar color="dark" dark expand="md">
+                <Navbar color="light" light expand="md">
                     <NavbarBrand className="navBarBrand cursor-pointer" onClick={()=>{this.props.history.push("/")}}>Joe Y. Jung</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>

@@ -7,9 +7,9 @@ class Footer extends Component {
             <div>
                 <footer className="footer">
                     <div className="footer-container">
-                        <FontAwesome.FaLinkedinSquare size={60} className="cursor-pointer fontawesome-icon"/>
-                        <FontAwesome.FaGitSquare size={60} className="cursor-pointer fontawesome-icon"/>
-                        <FontAwesome.FaFacebookSquare size={60} className="cursor-pointer fontawesome-icon"/>
+                        <a href="https://www.linkedin.com/in/joe-jung-joega5678/"  rel="noopener noreferrer" target="_blank" className="footer-icon-link"><FontAwesome.FaLinkedinSquare size={60} className="cursor-pointer fontawesome-icon"/></a>
+                        <a href="https://github.com/joegaBonito"  rel="noopener noreferrer" target="_blank" className="footer-icon-link"><FontAwesome.FaGitSquare size={60} className="cursor-pointer fontawesome-icon"/></a>
+                        <a href="https://www.facebook.com/joe.jung.148"  rel="noopener noreferrer" target="_blank" className="footer-icon-link"><FontAwesome.FaFacebookSquare size={60} className="cursor-pointer fontawesome-icon"/></a>
                     </div>
                 </footer>
             </div>
