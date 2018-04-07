@@ -1,21 +1,36 @@
 import React, { Component } from 'react';
-import { Jumbotron, Button } from 'reactstrap';
 import './landing.css';
+import IMG0181 from '../../assets/img/IMG-0181.JPG';
+import IMG0178 from '../../assets/img/IMG-0178.JPG';
+import IMG0087 from '../../assets/img/IMG-0087.JPG';
+import IMG0110 from '../../assets/img/IMG-0110.JPG';
+import IMG0168 from '../../assets/img/IMG-0168.JPG';
 
 class Landing extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            profileImageArray: [IMG0181,IMG0178,IMG0087,IMG0110,IMG0168]
+        }
+        
+    }
+    componentDidMount() {
+        var profileImageArray = this.state.profileImageArray;
+        var n = 0;
+        setInterval(function(){
+            if(n >= profileImageArray.length) {
+                n = 0;
+            }
+            document.getElementById("profile-image").src = profileImageArray[n];
+            n++;
+        },5000)
+    }
+
     render() {
         //var className = 'center-text';
         return (
-            <div>
-                <Jumbotron>
-                    <h1 className="display-3">Hello, world!</h1>
-                    <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
-                    <hr className="my-2" />
-                    <p>It uses utility classes for typgraphy and spacing to space content out within the larger container.</p>
-                    <p className="lead">
-                        <Button color="primary">Learn More</Button>
-                    </p>
-                </Jumbotron>
+            <div className="landing-div-positioning">
+                <img id="profile-image" className="profile-image" src={IMG0181} alt="profile" />
             </div>
         );
     }

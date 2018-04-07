@@ -14,6 +14,7 @@ const AsyncHeader = asyncComponent(() => import('./components/header/BootstrapHe
 const AsyncLanding = asyncComponent(() => import('./components/landing/landing').then(module => module.default));
 const AsyncProjects = asyncComponent(() => import('./components/projects/projects').then(module => module.default));
 const AsyncAbout = asyncComponent(()=> import('./components/about/about').then(module => module.default));
+const AsyncFooter = asyncComponent(()=>import('./components/footer/footer').then(module=>module.default));
 ReactDOM.render(
     <BrowserRouter>
         <div>
@@ -23,6 +24,7 @@ ReactDOM.render(
                 <Route exact path="/projects" component={AsyncProjects} />
                 <Route exact path="/about" component={AsyncAbout} />
             </Switch>
+            <Route component={AsyncFooter} />
         </div>
     </BrowserRouter>
     , document.getElementById('root'));
