@@ -10,26 +10,29 @@ class Landing extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            profileImageArray: [IMG0181,IMG0178,IMG0087,IMG0110,IMG0168]
+            profileImageArray: [IMG0181, IMG0178, IMG0087, IMG0110, IMG0168]
         }
-        
     }
-    componentDidMount() {
+    componentWillMount() {
         var profileImageArray = this.state.profileImageArray;
         var n = 0;
-        setInterval(function(){
-            if(n >= profileImageArray.length) {
-                n = 0;
-            }
-            document.getElementById("profile-image").src = profileImageArray[n];
-            n++;
-        },5000)
+        this.profileRotator = setInterval(function () {
+                if (n >= profileImageArray.length) {
+                    n = 0;
+                }
+                document.getElementById("profile-image").src = profileImageArray[n];
+                n++;
+            }, 5000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.profileRotator);
     }
 
     render() {
         //var className = 'center-text';
         return (
-            <div className="landing-div-positioning">
+            <div className="landing-div-positioning" >
                 <img id="profile-image" className="profile-image" src={IMG0181} alt="profile" />
             </div>
         );
