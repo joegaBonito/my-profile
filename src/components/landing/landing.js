@@ -31,13 +31,12 @@ class Landing extends Component {
     }
 
     render() {
-        //var className = 'center-text';
         return (
             <div className="landing-div-positioning" >
                 <img id="profile-image" className="profile-image" src={IMG0338} alt="profile" />
                 <hr/>
                 <br/>
-                <h2>I am Joe Jung, I code</h2>
+                <h2>I am <span className="spanStyle">Joe Jung</span>, I code</h2>
                 <p className="self-description">
                     Not only I love coding, but I also love playing board & video games and watching good movies!<br/>
                     My favorite food is Hamburgers and Subway sandwitches. <br/>

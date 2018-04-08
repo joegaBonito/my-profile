@@ -2,6 +2,10 @@ nav a {
     font-size: 16px !important;
 }
 
+.name {
+    font-weight:bold;
+}
+
 @media screen and (min-width: 640px) {
     nav a {
         font-size: 18px !important;
