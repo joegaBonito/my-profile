@@ -41,6 +41,9 @@ class BootstrapHeader extends Component {
                                 <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/projects")}}>Projects</NavLink>
                             </NavItem>
                             <NavItem>
+                                <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/work-history")}}>Work History</NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/about")}}>About</NavLink>
                             </NavItem>
                             {/* <UncontrolledDropdown nav inNavbar>

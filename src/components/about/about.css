@@ -1,57 +1,104 @@
-.jumbotron{
-    width:100%;
+.about-div-positioning {
+    text-align:center;
+    padding: 5px 0px 0px 0px;
 }
 
-.landing-div-positioning {
-    text-align:center;
-    padding: 2% 0% 16% 0%;
+.footer-placeholder {
+    height:70px;
 }
 
 h1 {
     font-size: 32px !important; 
 }
 
-@media screen and (min-width: 576px) {
-    .landing-div-positioning {
-        text-align:center;
-        padding: 2% 0% 12% 0%;
-    }
+ul {
+    padding:0px;
+    list-style-type:none;
+}
 
+ul li {
+    font-size:14px;
+}
+
+.jumbotron .lead {
+    font-size:16px;
+}
+
+.jumbotron .description {
+    font-size:14px;
+}
+
+@media screen and (min-width: 640px) {
     h1 {
-        font-size: 42px !important; 
+        font-size: 40px !important; 
+    }
+    ul li {
+        font-size:16px;
+    }
+    .jumbotron .lead {
+        font-size:18px;
+    }
+    .jumbotron .description {
+        font-size:16px;
     }
 }
 
-@media screen and (min-width: 768px) {
-
-    .landing-div-positioning {
-        text-align:center;
-        padding: 2% 0% 12% 0%;
-    }
-
+@media screen and (min-width: 960px) {
     h1 {
-        font-size: 52px !important; 
+        font-size: 48px !important; 
+    }
+    ul li {
+        font-size:18px;
+    }
+    .jumbotron .lead {
+        font-size:20px;
+    }
+    .jumbotron .description {
+        font-size:18px;
     }
 }
 
-@media screen and (min-width: 992px) {
-    .landing-div-positioning {
-        text-align:center;
-        padding: 2% 0% 8% 0%;
-    }
-    
+@media screen and (min-width: 1280px) {
     h1 {
-        font-size: 62px !important; 
+        font-size: 56px !important; 
+    }
+    ul li {
+        font-size:20px;
+    }
+    .jumbotron .lead {
+        font-size:22px;
+    }
+    .jumbotron .description {
+        font-size:20px;
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .landing-div-positioning {
-        text-align:center;
-        padding: 2% 0% 4% 0%;
+@media screen and (min-width: 1600px) {
+    h1 {
+        font-size: 64px !important; 
     }
-    
+    ul li {
+        font-size:22px;
+    }
+    .jumbotron .lead {
+        font-size:24px;
+    }
+    .jumbotron .description{
+        font-size:22px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
     h1 {
         font-size: 72px !important; 
+    }
+    ul li {
+        font-size:24px;
+    }
+    .jumbotron .lead {
+        font-size:26px;
+    }
+    .jumbotron .description {
+        font-size:24px;
     }
 }

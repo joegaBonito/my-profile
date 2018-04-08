@@ -16,14 +16,14 @@ class Landing extends Component {
     }
     componentWillMount() {
         var profileImageArray = this.state.profileImageArray;
-        var n = 0;
+        var n = 1;
         this.profileRotator = setInterval(function () {
                 if (n >= profileImageArray.length) {
                     n = 0;
                 }
                 document.getElementById("profile-image").src = profileImageArray[n];
                 n++;
-            }, 5000);
+            }, 3000);
     }
 
     componentWillUnmount() {
@@ -36,12 +36,14 @@ class Landing extends Component {
             <div className="landing-div-positioning" >
                 <img id="profile-image" className="profile-image" src={IMG0338} alt="profile" />
                 <hr/>
+                <br/>
                 <h2>I am Joe Jung, I code</h2>
                 <p className="self-description">
                     Not only I love coding, but I also love playing board & video games and watching good movies!<br/>
                     My favorite food is Hamburgers and Subway sandwitches. <br/>
                     Feel free to connect with me on Social Network Services provided in the footer below!
                 </p>
+                <div className="footer-placeholder"></div>
             </div>
         );
     }

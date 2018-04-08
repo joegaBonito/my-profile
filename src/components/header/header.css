@@ -1,3 +1,31 @@
-/* .navBarBrand { 
-    color:rgba(255,255,255,.5) !important;
-} */
+nav a {
+    font-size: 16px !important;
+}
+
+@media screen and (min-width: 640px) {
+    nav a {
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    nav a {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    nav a {
+        font-size: 22px !important;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    nav a {
+        font-size: 24px !important;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    
+}
