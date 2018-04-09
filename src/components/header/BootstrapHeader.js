@@ -30,21 +30,21 @@ class BootstrapHeader extends Component {
         return (
             <div>
                 <Navbar color="light" light expand="md">
-                    <NavbarBrand className="navBarBrand cursor-pointer name" onClick={()=>{this.props.history.push("/")}}>Joe Y. Jung</NavbarBrand>
+                    <NavbarBrand className="navBarBrand cursor-pointer name" onClick={()=>{this.props.history.push("/"); this.setState({isOpen:false});}}>Joe Y. Jung</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/")}}>Home</NavLink>
+                                <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/"); this.setState({isOpen:false});}}>Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/projects")}}>Projects</NavLink>
+                                <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/projects");this.setState({isOpen:false});}}>Projects</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/work-history")}}>Work History</NavLink>
+                                <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/work-history");this.setState({isOpen:false});}}>Work History</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/about")}}>About</NavLink>
+                                <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/about");this.setState({isOpen:false});}}>About Me</NavLink>
                             </NavItem>
                             {/* <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>

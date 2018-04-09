@@ -10,7 +10,7 @@ class About extends Component {
                     <Container fluid>
                         <h1 className="display-3">Education</h1>
                         <br />
-                        <p className="lead">Fordham University</p>
+                        <p className="lead">Graduated Fordham University</p>
                         <hr className="my-2" />
                         <p className="description">
                             Bachelor of Science: Computer Science, 2012-2016

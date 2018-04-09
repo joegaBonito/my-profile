@@ -37,7 +37,7 @@ class Projects extends Component {
                     <Container fluid>
                         <h1 className="display-3">Inventory Management Program</h1>
                         <p className="lead">Developed an Inventory Management Program that keeps records of Product Name, SKU, Selling & Purchase Price, Quantity, and etc,.<br/>
-                            Tools used: ReactJs (with Redux), Spring Boot, Bootstrap, and MYSQL</p>
+                            Tools used: ReactJS (with Redux), Spring Boot, Bootstrap, and MYSQL</p>
                         <hr className="my-2" />
                         <a href="https://github.com/joegaBonito/Inventory-Management-Program-React" rel="noopener noreferrer" target="_blank">Front-End Git Repository</a>&nbsp;&&nbsp; 
                         <a href="https://github.com/joegaBonito/Inventory-Management-Program" rel="noopener noreferrer" target="_blank">Back-End Git Repository</a>
@@ -47,10 +47,19 @@ class Projects extends Component {
                     <Container fluid>
                         <h1 className="display-3">Information Keeping Program</h1>
                         <p className="lead">Developed an Information Keeping Program that allows users to keep track of IDs and Passwords<br/>
-                            Tools used: ReactJs (with Redux), Spring Boot, Bootstrap, and MYSQL</p>
+                            Tools used: ReactJS (with Redux), Spring Boot, Bootstrap, and MYSQL</p>
                         <hr className="my-2" />
                         <a href="https://github.com/joegaBonito/Info-Keeper-frontend-React" rel="noopener noreferrer" target="_blank">Front-End Git Repository</a>&nbsp;&&nbsp; 
                         <a href="https://github.com/joegaBonito/Info-Keeper-backend-SpringBoot" rel="noopener noreferrer" target="_blank">Back-End Git Repository</a>
+                    </Container>
+                </Jumbotron>
+                <Jumbotron fluid>
+                    <Container fluid>
+                        <h1 className="display-3">Joe Jung's Profile Site</h1>
+                        <p className="lead">Created this profile site in order to introduce myself to the whole world!<br/>
+                            Tools used: ReactJS, Reactrap, AWS (light sail), Apache </p>
+                        <hr className="my-2" />
+                        <a href="https://github.com/joegaBonito/my-profile.git" rel="noopener noreferrer" target="_blank">Joe Jung's Profile Site</a>
                     </Container>
                 </Jumbotron>
                 <div className="footer-placeholder"></div>
