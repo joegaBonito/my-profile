@@ -26,14 +26,22 @@ class BootstrapHeader extends Component {
         });
     }
     render() {
-        var cursorPointer = 'cursor-pointer'
+        var cursorPointer = 'cursor-pointer';
         return (
             <div>
                 <Navbar color="light" light expand="md">
                     <NavbarBrand className="navBarBrand cursor-pointer name" onClick={()=>{this.props.history.push("/"); this.setState({isOpen:false});}}>Joe Y. Jung</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
+                    <Nav className="mr-auto" navbar>
+                         <NavItem>
+                                <NavLink className={cursorPointer} href="mailto:joejung428@gmail.com">joejung428@gmail.com</NavLink>
+                        </NavItem>
+                    </Nav>
+                    </Collapse>
+                    <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
+                           
                             <NavItem>
                                 <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/"); this.setState({isOpen:false});}}>Home</NavLink>
                             </NavItem>

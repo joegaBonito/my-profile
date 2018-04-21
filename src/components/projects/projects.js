@@ -30,7 +30,7 @@ class Projects extends Component {
                         <p className="lead">Developed a church youth group website by working on both Front-End and Back-End.<br/>
                             Tools used: Angular5 (Typescript), Spring Boot (Java), Bootstrap, MYSQL, and Apache Server.</p>
                         <hr className="my-2" />
-                        <a href="http://www.lg.com/ca_en/support" rel="noopener noreferrer" target="_blank">http://www.lg.com/ca_en/support</a>
+                        <a href="https://www.vayaarumdaun.org/" rel="noopener noreferrer" target="_blank">https://www.vayaarumdaun.org/</a>
                     </Container>
                 </Jumbotron>
                 <Jumbotron fluid>

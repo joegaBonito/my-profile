@@ -11,7 +11,9 @@ class Landing extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            profileImageArray: [IMG0338,IMG0181, IMG0087, IMG0110, IMG0168]
+            profileImageArray: [IMG0338,IMG0181, IMG0087, IMG0110, IMG0168],
+            skillsArray: ["I Communicate","I Analyze","I Code","I Solve" ],
+            skill: ""
         }
     }
     componentWillMount() {
@@ -23,11 +25,24 @@ class Landing extends Component {
                 }
                 document.getElementById("profile-image").src = profileImageArray[n];
                 n++;
-            }, 3000);
+        }, 3000);
+        var skillsArray = this.state.skillsArray;
+        this.setState({skill:this.state.skillsArray[0]});
+        var skillCount = 1;
+        this.skillsRotator = setInterval(()=>{
+            if(skillCount >= skillsArray.length) {
+                skillCount = 0;
+            }
+            this.setState({
+                skill:skillsArray[skillCount]
+            });
+            skillCount++;
+        },3000);
     }
 
     componentWillUnmount() {
         clearInterval(this.profileRotator);
+        clearInterval(this.skillsRotator);
     }
 
     render() {
@@ -36,10 +51,10 @@ class Landing extends Component {
                 <img id="profile-image" className="profile-image" src={IMG0338} alt="profile" />
                 <hr/>
                 <br/>
-                <h2>I am <span className="spanStyle">Joe Jung</span>, I code</h2>
+                <h2>I am <span className="spanStyle">Joe Jung</span>, {this.state.skill}</h2>
                 <p className="self-description">
-                    Not only I love coding, but I also love playing board & video games and watching good movies!<br/>
-                    My favorite food is Hamburgers and Subway sandwitches. <br/>
+                    I love playing board & video games and watching good movies!<br/>
+                    My favorite foods are Hamburgers and Subway sandwitches. <br/>
                     Feel free to connect with me on Social Network Services provided in the footer below!
                 </p>
                 <div className="footer-placeholder"></div>
