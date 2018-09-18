@@ -46,8 +46,12 @@ class Landing extends Component {
     }
 
     render() {
+      const { isMobile } = this.props;
         return (
             <div className="landing-div-positioning" >
+            <div>
+        // <h1>hello world {isMobile ? 'mobile' : 'desktop'}</h1>
+        </div>
                 <img id="profile-image" className="profile-image" src={IMG0338} alt="profile" />
                 <hr/>
                 <br/>
