@@ -5,6 +5,7 @@
 .landing-div-positioning {
     text-align:center;
     padding:5px;
+    opacity:0;
 }
 
 .footer-placeholder {
@@ -28,6 +29,7 @@
 h2 {
     font-size:22px;
 }
+
 
 @media screen and (min-width: 400px) {
     .profile-image{

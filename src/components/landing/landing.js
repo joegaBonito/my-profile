@@ -6,6 +6,7 @@ import IMG0087 from '../../assets/img/IMG-0087.JPG';
 import IMG0110 from '../../assets/img/IMG-0110.JPG';
 import IMG0168 from '../../assets/img/IMG-0168.JPG';
 import IMG0338 from '../../assets/img/IMG-0338.JPG';
+import anime from 'animejs';
 
 class Landing extends Component {
     constructor(props) {
@@ -40,17 +41,23 @@ class Landing extends Component {
         },3000);
     }
 
+    componentDidMount() {
+        this.animeEasingDidMount = anime({
+            targets: '.landing-div-positioning',
+            easing:'linear',
+            opacity:1
+        });
+    }
+
     componentWillUnmount() {
         clearInterval(this.profileRotator);
         clearInterval(this.skillsRotator);
     }
 
     render() {
-      const { isMobile } = this.props;
         return (
             <div className="landing-div-positioning" >
             <div>
-        // <h1>hello world {isMobile ? 'mobile' : 'desktop'}</h1>
         </div>
                 <img id="profile-image" className="profile-image" src={IMG0338} alt="profile" />
                 <hr/>
@@ -58,7 +65,7 @@ class Landing extends Component {
                 <h2>I am <span className="spanStyle">Joe Jung</span>, {this.state.skill}</h2>
                 <p className="self-description">
                     I love playing board & video games and watching good movies!<br/>
-                    My favorite foods are Hamburgers and Subway sandwitches. <br/>
+                    My favorite food is Hamburgers. <br/>
                     Feel free to connect with me on Social Network Services provided in the footer below!
                 </p>
                 <div className="footer-placeholder"></div>

@@ -1,21 +1,43 @@
 import React, { Component } from 'react';
 import { Jumbotron, Container } from 'reactstrap';
 import './WorkHistory.css';
+import anime from 'animejs';
 
 class WorkHistory extends Component {
+  componentDidMount() {
+    this.animeEasingDidMount = anime({
+        targets: '.wh-div-positioning',
+        easing:'linear',
+        opacity:1
+    });
+}
+
   render() {
     return (
       <div className="wh-div-positioning">
+      <Jumbotron fluid>
+          <Container fluid>
+            <h1 className="display-3">Samsung SDS America.</h1>
+            <br />
+            <p className="lead">Software Engineer, 06/15/18 to Present</p>
+            <hr className="my-2" />
+            <p className="description">
+              Samsung Project Management System (SPMS) is Samsung Network Divison's internal system that manages network cell tower installation.<br/>
+              Updated PostgresSQL Database, Provided Data, Deployed Software releases using Jenkins, Managed directory disk space on Red Hat Linux Server,<br/>
+              Monitored services by using/configuring the UI testing tool Selenium, and Suported users who are having technical difficulties.
+            </p>
+          </Container>
+        </Jumbotron>
         <Jumbotron fluid>
           <Container fluid>
             <h1 className="display-3">LG CNS America Inc.</h1>
             <br />
-            <p className="lead">LG.COM Technical Account Manager, 08/16/16 to Current</p>
+            <p className="lead">LG.COM Technical Account Manager, 08/16/16 to 06/15/2018</p>
             <hr className="my-2" />
             <p className="description">
-              Analyze daily requests from clients on LG.COM, communicate with development team regarding development
+              Analyzed daily requests from clients on LG.COM, communicate with development team regarding development
               scope, and monitor website traffics & issues.<br />
-              Coding with Javascript when implementing or modifying API between 3rd party systems.
+              Coded with Javascript when implementing or modifying API between 3rd party systems.
             </p>
           </Container>
         </Jumbotron>
@@ -38,16 +60,6 @@ class WorkHistory extends Component {
             <hr className="my-2" />
             <p className="description">
               Moved Fordham University’s old news articles to a new database through WordPress CMS.
-            </p>
-          </Container>
-        </Jumbotron>
-        <Jumbotron fluid>
-          <Container fluid>
-            <h1 className="display-3">Mont Fashion Inc.</h1>
-            <p className="lead">Accountant, 02/2014 to 10/01/2015</p>
-            <hr className="my-2" />
-            <p className="description">
-            Managed invoices by using Microsoft Access, reported sales analysis, handled customer & vendor services, received orders & sent statements.
             </p>
           </Container>
         </Jumbotron>

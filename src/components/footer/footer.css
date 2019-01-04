@@ -6,6 +6,7 @@
     line-height: 60px;
     background-color: #f5f5f5;  
     text-align:center;
+    opacity:0;
 }
 
 .footer-icon-link {

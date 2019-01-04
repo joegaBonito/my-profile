@@ -1,7 +1,17 @@
 import React,{Component} from 'react';
 import './footer.css';
 import * as FontAwesome from 'react-icons/lib/fa';
+import anime from 'animejs';
+
 class Footer extends Component {
+    componentDidMount() {
+        this.animeEasingDidMount = anime({
+            targets: '.footer',
+            easing:'linear',
+            opacity:1
+        });
+    }
+
     render() {
         return(
             <div>

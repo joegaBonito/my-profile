@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
 import { Jumbotron, Container } from 'reactstrap';
 import './about.css';
+import anime from 'animejs';
 
 class About extends Component {
+    componentDidMount() {
+        this.animeEasingDidMount = anime({
+            targets: '.about-div-positioning',
+            easing:'linear',
+            opacity:1
+        });
+    }
+
     render() {
         return (
             <div className="about-div-positioning">

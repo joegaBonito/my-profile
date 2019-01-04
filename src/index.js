@@ -23,7 +23,7 @@ ReactDOM.render(
             <Switch>
                 <Route exact path="/" component={AsyncLanding} {...window.__APP_INITIAL_STATE__} />
                 <Route exact path="/projects" component={AsyncProjects} />
-                <Route exact path="/work-history" component={AsyncWorkHistory} />
+                <Route exact path="/career" component={AsyncWorkHistory} />
                 <Route exact path="/about" component={AsyncAbout} />
             </Switch>
             <Route component={AsyncFooter} />

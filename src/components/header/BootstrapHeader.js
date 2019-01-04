@@ -11,6 +11,8 @@ import {
 
 import './header.css'
 
+import anime from 'animejs';
+
 class BootstrapHeader extends Component {
     constructor(props) {
         super(props);
@@ -20,6 +22,15 @@ class BootstrapHeader extends Component {
             isOpen: false
         };
     }
+
+    componentDidMount() {
+        this.animeEasingDidMount = anime({
+            targets: '.nav-comp',
+            easing:'linear',
+            opacity:1
+        });
+    }
+
     toggle() {
         this.setState({
             isOpen: !this.state.isOpen
@@ -28,7 +39,7 @@ class BootstrapHeader extends Component {
     render() {
         var cursorPointer = 'cursor-pointer';
         return (
-            <div>
+            <div className="nav-comp">
                 <Navbar color="light" light expand="md">
                     <NavbarBrand className="navBarBrand cursor-pointer name" onClick={()=>{this.props.history.push("/"); this.setState({isOpen:false});}}>Joe Y. Jung</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
@@ -49,7 +60,7 @@ class BootstrapHeader extends Component {
                                 <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/projects");this.setState({isOpen:false});}}>Projects</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/work-history");this.setState({isOpen:false});}}>Work History</NavLink>
+                                <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/career");this.setState({isOpen:false});}}>Career</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className={cursorPointer} onClick={()=>{this.props.history.push("/about");this.setState({isOpen:false});}}>About Me</NavLink>
