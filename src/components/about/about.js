@@ -31,20 +31,31 @@ class About extends Component {
                         <h1 className="display-3">Technical Skills</h1>
                         <hr className="my-2" />
                         <ul>
-                            <li>Angular5</li>
                             <li>ReactJS</li>
-                            <li>JQuery</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
+                            <li>Angular</li>
                             <li>Javascript</li>
                             <li>Typescript</li>
-                            <li>MySQL</li>
-                            <li>Bootstrap</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
                             <li>NPM</li>
+                            <li>Webpack</li>
+                            <li>Babel</li>
+                            <li>Java</li>
+                            <li>JavaEE</li>
+                            <li>Spring Framework</li>
                             <li>Maven</li>
-                            <li>Github</li>
-                            <li>Knows RESTful API calls</li>
-                            <li>Understands Redux flow</li>
+                            <li>Gradle</li>
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>Bootstrap</li>
+                            <li>Git</li>
+                            <li>RESTful API calls</li>
+                            <li>Redux flow</li>
+                            <li>Tomcat</li>
+                            <li>JBoss</li>
+                            <li>Selenium</li>
+                            <li>JUnit</li>
+                            <li>AWS (EC2, S3, Elastic Beanstalk, Lightsail)</li>
                         </ul>
                     </Container>
                 </Jumbotron>
@@ -58,7 +69,7 @@ class About extends Component {
                             <li>Strong communication skills</li>
                             <li>Persistent and responsible work ethic</li>
                             <li>Fast learning and understanding ability</li>
-                            <li>Self motivated</li>
+                            <li>Highly Self motivated</li>
                             <li>Fluent in Korean</li>
                         </ul>
                     </Container>
